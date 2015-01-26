@@ -40,6 +40,7 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
+                <!-- Title Slide -->
 				<section>
 					<h1><a href="https://github.com/SIGMusic/tonal-starfield">Tonal StarField</a></h1>
 					<h3>A massively collaborative musical composition simulation</h3>
@@ -48,11 +49,54 @@
 					</p>
 				</section>
 
+                <!-- How it works -->
 				<section>
+                    <h2>How does this work?</h2>
                     <section>
-					    <h2><b>How</b> does this work?</h2>
-					</section>
-                    <section>Like this</section>
+                        <h2>Web page</h2>
+                        <p>
+                            Responsible for collecting user input. Communicates to the web server through WebSockets
+                        </p>
+                        <p>
+                            <i>HTML // CSS // Javascript // WebSockets</i>
+                        </p>
+                    </section>
+                    <section>
+                        <h2><a href="https://github.com/SIGMusic/tonal-starfield-server">Web server</a></h2>
+                        <p>
+                            Relays data from users to visual simulation.
+                        </p>
+                        <p>
+                            <i><a href="http://nodejs.org/">node.js</a> // OSC </i>
+                        </p>
+                    </section>
+                    <section>
+                        <h2><a href="https://github.com/SIGMusic/tonal-starfield-simulation">Visual Simulation</a></h2>
+                        <p>
+                            Creates a visual representation of physical and digital input. Plays sounds and controls lights through OSC
+                        </p>
+                        <p>
+                            <i><a href="https://www.unrealengine.com/">Unreal Engine</a> // OSC </i>
+                        </p>
+                    </section>
+                    <section>
+                        <h2><a href="https://github.com/SIGMusic/sound015">Sound</a></h2>
+                        <p>
+                            Uses ChucK to build sound synthesizers from the ground up.
+                        </p>
+                        <p>
+                            <i><a href="http://chuck.cs.princeton.edu/">ChucK</a> // OSC</i>
+                        </p>
+                    </section>
+                    <section>
+                        <h2><a href="https://github.com/SIGMusic/Lights2015">Lights</a></h2>
+                        <p>
+                            Uses custom-built lighting hardware and bluetooth protocol to light the room.
+                        </p>
+                        <p>
+                            <i>Bluetooth // Arduino // Voodoo Magic</i>
+                        </p>
+                    </section>
 				</section>
 
 
@@ -74,7 +118,7 @@
 				center: true,
                 loop: true,
 
-                autoSlide: 10000,
+                autoSlide: 15000,
 
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
 
